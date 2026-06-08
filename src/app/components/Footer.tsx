@@ -75,14 +75,9 @@ export default function Footer() {
           <p className="text-center">
                © 2026 Astrologer Ashvani. All rights reserved.
                <br />
-                 <a
-                   href="https://myportfolio-git-main-ankit-prajapatis-projects-d03514f2.vercel.app/"
-                    target="_blank"
-                     rel="noopener noreferrer"
-                       className="text-[var(--gold)] hover:text-white transition-colors"
-                            >
+                 <p>
                          Website Designed & Developed by Ankit Prajapati
-                          </a>
+                          </p>
           </p>
         </div>
       </div>
