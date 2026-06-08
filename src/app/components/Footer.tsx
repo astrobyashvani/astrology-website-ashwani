@@ -75,9 +75,7 @@ export default function Footer() {
           <p className="text-center">
                © 2026 Astrologer Ashvani. All rights reserved.
                <br />
-                 <p>
-                         Website Designed & Developed by Ankit Prajapati
-                          </p>
+               Website Designed & Developed by Ankit Prajapati                        
           </p>
         </div>
       </div>
