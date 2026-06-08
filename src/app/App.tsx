@@ -8,12 +8,16 @@ import Services from './pages/Services';
 import Testimonials from './pages/Testimonials';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
+
       <div className="min-h-screen flex flex-col">
         <Navbar />
+
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,6 +28,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+
         <Footer />
         <WhatsAppButton />
       </div>

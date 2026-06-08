@@ -88,7 +88,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-24">
+      <section className="relative py-20 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--purple-dark)] via-purple-900 to-indigo-900">
           <ImageWithFallback
             src={heroBg}
