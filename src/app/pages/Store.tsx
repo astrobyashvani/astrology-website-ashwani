@@ -1,9 +1,9 @@
-import kuberYantra from "../../imports/kuber-yantra.JPEG";
-import gemstone from "../../imports/gemstone.JPEG";
-import rudraksha from "../../imports/rudraksha.JPEG";
-import crystal from "../../imports/crystal.JPEG";
-import mahakalYantra from "../../imports/mahakal-yantra.JPEG";
-import mixCrystal from "../../imports/mix-crystal.JPEG";
+import kuberYantra from "../../imports/kuber-yantra.jpeg";
+import gemstone from "../../imports/gemstone.jpeg";
+import rudraksha from "../../imports/rudraksha.jpeg";
+import crystal from "../../imports/crystal.jpeg";
+import mahakalYantra from "../../imports/mahakal-yantra.jpeg";
+import mixCrystal from "../../imports/mix-crystal.jpeg";
 
 const products = [
   {
