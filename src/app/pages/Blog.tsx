@@ -93,7 +93,6 @@ export default function Blog() {
   ];
 
   const categories = [
-    'All Posts',
     'Astrology Basics',
     'Planetary Transits',
     'Relationships',
@@ -166,7 +165,7 @@ export default function Blog() {
       <section className="py-16 bg-[var(--purple-50)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h3 className="text-[var(--purple-dark)] mb-4">Browse by Category</h3>
+            <h3 className="text-[var(--purple-dark)] mb-4">Discover the World of Astrology</h3>
             <div className="flex flex-wrap gap-3">
               {categories.map((category, index) => (
                 <button
