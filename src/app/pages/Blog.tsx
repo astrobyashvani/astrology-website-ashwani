@@ -1,4 +1,5 @@
 import { Calendar, Clock, ArrowRight, TrendingUp } from 'lucide-react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import celestialBg from '../../imports/Gemini_Generated_Image_p1gs0yp1gs0yp1gs.png';
@@ -7,10 +8,12 @@ import horoscopeImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_36_49_AM.p
 import zodiacWheel from '../../imports/240_F_999898861_tkRpLuivJqmdBz6dLOGGua5Fb9586LUX.jpg';
 import celestialBanner from '../../imports/240_F_794875557_qa5hIqGI18y8D7i5iEy0KisEac0e7hUS.jpg';
 
+
 export default function Blog() {
+  const [expandedPost, setExpandedPost] = useState<number | null>(null);
   const featuredPost = {
     title: 'Complete Guide to Understanding Your Birth Chart',
-    excerpt: 'Unlock the secrets of your Kundli and discover how planetary positions at your birth influence your entire life journey. This comprehensive guide covers all 12 houses and their significance.',
+    excerpt: 'Your Kundli, or birth chart, is a cosmic map created from the exact date, time, and place of your birth, revealing the unique patterns that shape your personality, relationships, career, finances, and spiritual journey. Each of the 12 houses governs different areas of life, while the positions of planets and their interactions influence opportunities, strengths, challenges, and life lessons. The ascendant, planetary aspects, yogas, dashas, and transits all work together to create a highly personalized blueprint that cannot be understood through sun signs alone. Even small differences in birth details can lead to significant variations in interpretation, making a deeper understanding of the chart essential for uncovering hidden potentials, recognizing obstacles, and making informed decisions during important phases of life.',
     date: 'June 5, 2026',
     readTime: '10 min read',
     category: 'Astrology Basics',
@@ -20,7 +23,7 @@ export default function Blog() {
   const blogPosts = [
     {
       title: 'Mercury Retrograde 2026: What You Need to Know',
-      excerpt: 'Learn how to navigate Mercury retrograde periods and turn potential challenges into opportunities for growth and reflection.',
+      excerpt: `Mercury Retrograde is one of the most discussed astrological events, occurring when Mercury appears to move backward in the sky from Earth's perspective. This period is often associated with communication delays, misunderstandings, travel disruptions, technological issues, and unexpected changes in plans. However, it is also a powerful time for reflection, reassessment, and revisiting unfinished tasks or relationships from the past. Rather than fearing Mercury Retrograde, understanding its influence can help you slow down, think carefully before making important decisions, improve communication, and turn temporary challenges into valuable opportunities for personal growth, self-awareness, and positive transformation.`,
       date: 'June 1, 2026',
       readTime: '7 min read',
       category: 'Planetary Transits',
@@ -28,7 +31,7 @@ export default function Blog() {
     },
     {
       title: 'Zodiac Sign Compatibility in Relationships',
-      excerpt: 'Discover which zodiac signs are most compatible with yours and understand the dynamics of astrological relationships.',
+      excerpt: `Zodiac compatibility goes far beyond simply matching Sun signs. Every relationship is influenced by a unique combination of planetary positions, Moon signs, Venus and Mars placements, emotional needs, communication styles, and long-term life goals. Understanding astrological compatibility can reveal why certain connections feel effortless while others require patience and growth. It can help you identify strengths, potential challenges, emotional patterns, and areas where mutual understanding is needed. Whether you are seeking love, strengthening an existing relationship, or simply curious about your cosmic connections, exploring zodiac compatibility offers fascinating insights into attraction, trust, communication, and the deeper dynamics that shape meaningful and lasting relationships.`,
       date: 'May 28, 2026',
       readTime: '8 min read',
       category: 'Relationships',
@@ -36,7 +39,7 @@ export default function Blog() {
     },
     {
       title: 'The Power of Vedic Astrology Remedies',
-      excerpt: 'Explore effective remedies from Vedic astrology to overcome obstacles and enhance positive planetary influences in your life.',
+      excerpt: `Vedic astrology offers a wide range of time-tested remedies designed to harmonize planetary energies and reduce the impact of challenging astrological influences. These remedies may include mantras, meditation, charitable acts, gemstones, fasting, spiritual practices, and lifestyle adjustments that encourage inner balance and positive transformation. Rather than changing destiny, these practices are believed to strengthen favorable energies, improve mental clarity, increase confidence, and help individuals navigate obstacles with greater awareness and resilience. Since every birth chart contains a unique combination of planetary placements, the effectiveness and suitability of remedies can vary significantly, making a deeper understanding of one's astrological patterns essential for choosing the most meaningful and beneficial path toward growth, prosperity, and well-being.`,
       date: 'May 25, 2026',
       readTime: '6 min read',
       category: 'Remedies',
@@ -44,7 +47,7 @@ export default function Blog() {
     },
     {
       title: 'Career Predictions Based on Your 10th House',
-      excerpt: 'Understanding how the 10th house in your birth chart reveals your career path and professional success.',
+      excerpt: `The 10th House, often called the House of Career and Reputation, plays a significant role in shaping your professional journey, ambitions, public image, leadership qualities, and long-term achievements. The sign on the 10th House, its ruling planet, and the placement and aspects of planets within it can reveal your natural talents, preferred work environment, potential career paths, and areas where recognition and success are likely to emerge. It may also highlight professional challenges, periods of growth, changes in direction, and opportunities for advancement. Since every birth chart contains a unique combination of planetary influences, even individuals with the same profession can have entirely different strengths, motivations, and life purposes. Understanding the deeper patterns of the 10th House can provide meaningful insights into career decisions, personal fulfillment, and the path toward lasting success and recognition.`,
       date: 'May 20, 2026',
       readTime: '9 min read',
       category: 'Career',
@@ -52,7 +55,7 @@ export default function Blog() {
     },
     {
       title: 'Full Moon Energy: Harnessing Lunar Power',
-      excerpt: 'Learn how to work with full moon energy for manifestation, release, and spiritual growth.',
+      excerpt: `The Full Moon has long been regarded as a powerful period of heightened energy, emotional awareness, and spiritual illumination. In astrology, it represents culmination, clarity, and the completion of cycles, making it an ideal time for reflection, gratitude, manifestation, and releasing what no longer serves your growth. Many people experience increased intuition, vivid dreams, stronger emotions, and a deeper connection to their inner selves during this phase. Full Moon practices such as meditation, journaling, intention setting, and mindful rituals can help channel this energy toward personal transformation and emotional healing. Since each Full Moon interacts differently with individual birth charts and planetary placements, its influence can bring unique opportunities, challenges, and insights that encourage self-discovery, renewal, and meaningful spiritual growth.`,
       date: 'May 15, 2026',
       readTime: '5 min read',
       category: 'Lunar Astrology',
@@ -60,7 +63,7 @@ export default function Blog() {
     },
     {
       title: 'Numerology: The Meaning Behind Numbers',
-      excerpt: 'Decode the significance of numbers in your life and discover your life path number.',
+      excerpt: `Numerology is the ancient study of numbers and their symbolic influence on personality, relationships, career choices, and life's major events. Among its most important concepts is the Life Path Number, derived from your birth date, which is believed to reveal your natural talents, strengths, challenges, and the lessons you are meant to experience throughout your journey. Each number carries unique vibrations and characteristics that can influence decision-making, emotional patterns, compatibility, and personal aspirations. Beyond the Life Path Number, other numerological elements such as Destiny, Soul Urge, and Personality Numbers provide additional layers of insight into your true potential and purpose. Since every individual possesses a unique combination of numbers and energies, understanding these patterns can offer valuable guidance for self-discovery, personal growth, and making more informed choices in different areas of life.`,
       date: 'May 10, 2026',
       readTime: '7 min read',
       category: 'Numerology',
@@ -68,7 +71,7 @@ export default function Blog() {
     },
     {
       title: 'Vastu Tips for a Prosperous Home',
-      excerpt: 'Simple Vastu Shastra principles to bring positive energy and prosperity to your living space.',
+      excerpt: `Vastu Shastra is an ancient Indian architectural science that focuses on creating harmony between living spaces and the natural elements of earth, water, fire, air, and space. It offers practical guidelines for the placement of rooms, entrances, furniture, colors, and sacred spaces to encourage balance, positivity, and well-being within a home or workplace. According to Vastu principles, the flow of energy in a space can influence peace of mind, relationships, health, financial stability, and overall prosperity. Simple adjustments such as optimizing directions, improving natural light, and arranging key areas thoughtfully can contribute to a more balanced and uplifting environment. Since every property has a unique layout and every individual has different needs and life circumstances, understanding the deeper principles of Vastu can provide valuable insights for creating spaces that support growth, harmony, and long-term success.`,
       date: 'May 5, 2026',
       readTime: '6 min read',
       category: 'Vastu Shastra',
@@ -76,7 +79,7 @@ export default function Blog() {
     },
     {
       title: 'Saturn Return: Your Cosmic Coming of Age',
-      excerpt: 'What to expect during your Saturn return and how to make the most of this transformative period.',
+      excerpt: `A Saturn Return is one of the most significant and transformative periods in astrology, occurring approximately every 29 to 30 years when Saturn returns to the exact position it occupied at your birth. Often associated with increased responsibilities, major life decisions, career changes, relationship shifts, and personal growth, this period encourages individuals to reevaluate their priorities and build a stronger foundation for the future. While it can bring challenges, delays, and moments of self-doubt, Saturn's lessons are ultimately focused on discipline, maturity, resilience, and long-term success. Many people experience important turning points during their Saturn Return, such as changes in career direction, commitments in relationships, or a deeper understanding of their life's purpose. Since the influence of Saturn varies according to individual birth charts, house placements, and planetary aspects, each person's journey through this cosmic milestone can unfold in unique and deeply meaningful ways.`,
       date: 'April 30, 2026',
       readTime: '8 min read',
       category: 'Planetary Transits',
@@ -84,7 +87,7 @@ export default function Blog() {
     },
     {
       title: 'Tarot Reading for Beginners',
-      excerpt: 'A comprehensive introduction to Tarot cards and how to perform your first reading.',
+      excerpt: `Tarot is an ancient system of symbolic cards used for self-reflection, intuition, and gaining deeper insights into life's questions and possibilities. A traditional Tarot deck consists of 78 cards, including the Major Arcana, which represents significant life lessons and spiritual themes, and the Minor Arcana, which reflects everyday experiences, emotions, relationships, and challenges. Learning Tarot involves understanding the meanings, symbolism, and energy of each card while developing the intuition to interpret their messages in different situations. Whether you are seeking guidance about love, career, personal growth, or future opportunities, Tarot can serve as a powerful tool for introspection and self-discovery. Since every reading is influenced by the question asked, the card combinations drawn, and the unique circumstances of an individual, Tarot often reveals deeply personal insights that encourage clarity, reflection, and a greater understanding of one's life journey.`,
       date: 'April 25, 2026',
       readTime: '10 min read',
       category: 'Tarot',
@@ -205,7 +208,10 @@ export default function Blog() {
                 </div>
                 <div className="p-6">
                   <h4 className="text-[var(--purple-dark)] mb-3 line-clamp-2">{post.title}</h4>
-                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                  <p className={`text-gray-600 mb-4 transition-all duration-300 ${
+                    expandedPost === index ? '' : 'line-clamp-3' }`} >
+                    {post.excerpt}
+                  </p>
                   <div className="flex items-center gap-4 text-gray-500 mb-4">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
@@ -216,10 +222,22 @@ export default function Blog() {
                       <span>{post.readTime}</span>
                     </div>
                   </div>
-                  <button className="inline-flex items-center text-[var(--gold)] hover:text-yellow-600 transition-colors">
-                    Read More
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </button>
+                  <button
+                    onClick={() =>
+                     setExpandedPost(
+                     expandedPost === index ? null : index
+                        )
+                        }
+                        className="inline-flex items-center text-[var(--gold)] hover:text-yellow-600 transition-colors"
+                        >
+                       {expandedPost === index ? 'Read Less' : 'Read More'}
+
+                       <ArrowRight
+                        className={`w-4 h-4 ml-1 transition-transform duration-300 ${
+                        expandedPost === index ? 'rotate-90' : ''
+                       }`}
+                         />
+                    </button>
                 </div>
               </article>
             ))}
