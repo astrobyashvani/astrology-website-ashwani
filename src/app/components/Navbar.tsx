@@ -7,13 +7,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Testimonials', path: '/testimonials' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' },
-  ];
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Services', path: '/services' },
+  { name: 'Testimonials', path: '/testimonials' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Store', path: '/store' },
+  { name: 'Contact', path: '/contact' },
+];
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
@@ -75,6 +76,7 @@ export default function Navbar() {
               >
                 {link.name}
               </NavLink>
+              
             ))}
             <a
               href="https://wa.me/918756871600?text=Hello%20Ashvani%20Ji%2C%0AI%20would%20like%20to%20schedule%20a%20consultation%20with%20you."
