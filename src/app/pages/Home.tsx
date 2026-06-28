@@ -8,6 +8,7 @@ import kundliImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_38_32_AM.png'
 import horoscopeImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_36_49_AM.png';
 import futureImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_41_00_AM.png';
 import zodiacWheel from '../../imports/240_F_999898861_tkRpLuivJqmdBz6dLOGGua5Fb9586LUX.jpg';
+import ashvaniImg from '../../imports/ashvani-Photo.png';
 
 export default function Home() {
   const services = [
@@ -107,6 +108,7 @@ export default function Home() {
           <h1 className="mb-6">
             <span className="block">Unlock Your Destiny Through</span>
             <span className="block text-[var(--gold)]">Ancient Vedic Astrology</span>
+            <span className="block text-[var(--gold)]">In just ₹301</span>
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200 mb-8">
             Professional Vedic Astrologer with expertise in Kundli Analysis, Palm Reading, Relationship Guidance & Spiritual Remedies.
@@ -128,7 +130,7 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full hover:bg-[#20ba5a] transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <MessageCircle className="w-5 h-5" />
-              Chat on WhatsApp
+              Consult Now • ₹301
             </a>
           </div>
         </div>
@@ -174,15 +176,69 @@ export default function Home() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-[var(--purple-dark)] mb-4">About Me</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-              I am Ashvani, a professional Vedic astrologer with 5 years of experience in astrology consultation, palm reading, relationship guidance, and spiritual remedies. I help people find clarity in career, love, marriage, finance, and life decisions through authentic Vedic knowledge.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+
+  <div className="flex justify-center">
+    <ImageWithFallback
+      src={ashvaniImg}
+      alt="Astro by Ashvani"
+      className="w-full max-w-md rounded-2xl shadow-2xl object-cover"
+    />
+  </div>
+
+  <div>
+    <h2 className="text-[var(--purple-dark)] mb-6">
+      About Ashvani Ji
+    </h2>
+
+    <p className="text-gray-700 leading-8 mb-5">
+  Ashvani Ji has been helping individuals and families navigate life's
+  important decisions through the timeless wisdom of Vedic Astrology.
+  With years of practical consultation experience, he provides
+  personalized guidance for career, marriage, relationships, education,
+  business, finances, health, and personal growth. Every consultation is
+  centered on understanding the unique circumstances of each individual
+  and offering meaningful insights based on traditional astrological
+  principles.
+</p>
+
+<p className="text-gray-700 leading-8 mb-5">
+  With a strong understanding of Vedic Astrology, Kundli Analysis,
+  Horoscope Matching (Kundli Milan), Planetary Doshas, Dashas, Gochar
+  (planetary transits), Muhurat Selection, and Remedial Astrology,
+  Ashvani Ji carefully studies every birth chart before providing
+  guidance. Rather than offering generic advice, he analyzes planetary
+  positions, yogas, and life patterns to help clients gain clarity,
+  confidence, and a better understanding of the opportunities and
+  challenges ahead.
+</p>
+
+<p className="text-gray-700 leading-8 mb-5">
+  His consultations are known for being patient, confidential, and
+  personalized. Along with detailed horoscope analysis, he recommends
+  suitable Vedic remedies such as mantra guidance, gemstone suggestions,
+  spiritual practices, and practical solutions tailored to each person's
+  horoscope. His goal is to help individuals make informed decisions with
+  greater confidence while maintaining a balanced approach rooted in
+  authentic Vedic traditions.
+</p>
+
+<p className="text-gray-700 leading-8">
+  Whether someone is seeking guidance for career growth, marriage,
+  relationships, business success, financial planning, family harmony, or
+  spiritual well-being, Ashvani Ji is committed to providing thoughtful
+  consultations with honesty, compassion, and professionalism. His
+  approach combines traditional astrological knowledge with practical
+  guidance, empowering clients to move forward with greater clarity,
+  confidence, and peace of mind.
+</p>
+
+  </div>
+
+</div>
 
           <div className="mb-12">
-            <h3 className="text-center text-[var(--purple-dark)] mb-8">My Skills</h3>
+            <h3 className="text-center text-[var(--purple-dark)] mb-8">Consult With Me Abouth</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {['Vedic Astrology', 'Palm Reading', 'Match Making', 'Career Guidance', 'Love & Relationship', 'Spiritual Remedies'].map((skill, index) => (
                 <div
