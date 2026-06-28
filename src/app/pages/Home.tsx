@@ -8,7 +8,7 @@ import kundliImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_38_32_AM.png'
 import horoscopeImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_36_49_AM.png';
 import futureImg from '../../imports/ChatGPT_Image_Jun_4__2026__04_41_00_AM.png';
 import zodiacWheel from '../../imports/240_F_999898861_tkRpLuivJqmdBz6dLOGGua5Fb9586LUX.jpg';
-import ashvaniImg from '../../imports/ashvani-Photo.png';
+import ashvaniImg from '../../imports/Ashvani-Photo.png';
 
 export default function Home() {
   const services = [
